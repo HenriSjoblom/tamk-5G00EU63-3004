@@ -1,6 +1,6 @@
 -- Author: Henri Sjöblom <henri.sjoblom@tuni.fi>
 -- Date: 2024-02-01
--- File: 033-order-by-3.sql
+-- File: 034-order-by-4.sql
 -- Problem:
 -- Display the name, salary and calculate new salary and
 -- commission for all employees whose commission amount is

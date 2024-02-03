@@ -8,6 +8,6 @@
 SELECT ename,
        job
 FROM emp
-WHERE mgr Is NULL;
+WHERE mgr IS NULL;
 
 -- End of file
