@@ -7,8 +7,8 @@
 -- and job (alphabetically).
 
 SELECT LOWER(ename) AS "Name",
-       LOWER(job) as "Job",
-       LOWER(sal) as "Salary"
+       LOWER(job) AS "Job",
+       LOWER(sal) AS "Salary"
 FROM emp
 ORDER BY ename ASC,
          job ASC;
