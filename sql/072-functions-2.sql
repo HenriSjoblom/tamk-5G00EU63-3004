@@ -7,7 +7,7 @@
 -- rows.
 
 SELECT LOWER(ename) AS "Name",
-       LENGTH(ename) as "Characters"
+       LENGTH(ename) AS "Characters"
 FROM emp
 ORDER BY LENGTH(ename) ASC,
          ename ASC;
