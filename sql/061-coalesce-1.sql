@@ -10,6 +10,7 @@ SELECT deptno,
        ename,
        COALESCE(comm, 0) AS "comm"
 FROM emp
+WHERE deptno = 30
 ORDER BY ename ASC,
          comm ASC;
 

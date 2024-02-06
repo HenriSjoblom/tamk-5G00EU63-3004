@@ -10,11 +10,11 @@
 -- titles unaffected.
 
 SELECT ename,
-       CASE WHEN SUBSTRING(job FROM 1 FOR 1) = 'a'
+       CASE WHEN SUBSTRING(job, 1, 1) = 'a'
                  OR
-                 SUBSTRING(job FROM 1 FOR 1) = 'm'
+                 SUBSTRING(job, 1, 1) = 'm'
                  OR
-                 SUBSTRING(job FROM 1 FOR 1) = 'j'
+                 SUBSTRING(job, 1, 1) = 'j'
                  THEN LOWER(job)
             ELSE job
             END AS "job"
