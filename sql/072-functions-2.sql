@@ -10,6 +10,6 @@ SELECT LOWER(ename) AS "Name",
        LENGTH(ename) as "Characters"
 FROM emp
 ORDER BY LENGTH(ename) ASC,
-         LOWER(ename) ASC;
+         ename ASC;
 
 -- End of file
