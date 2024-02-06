@@ -12,6 +12,6 @@ SELECT ename AS "Name",
        COALESCE(sal, 0) * 0.69 + COALESCE(comm, 0) * 0.8  AS "Net Income",
        COALESCE(sal, 0) * 0.31 + COALESCE(comm, 0) * 0.2 AS "Tax"
 FROM emp
-ORDER BY sal * 0.69 + comm * 0.8 ASC;
+ORDER BY "Net income" ASC;
 
 -- End of file
