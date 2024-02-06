@@ -11,6 +11,6 @@ SELECT deptno,
        COALESCE(comm, 0) AS "comm"
 FROM emp
 ORDER BY ename ASC,
-         COALESCE(comm, 0) ASC;
+         comm ASC;
 
 -- End of file

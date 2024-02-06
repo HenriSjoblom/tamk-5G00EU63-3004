@@ -6,11 +6,11 @@
 -- descriptions to SALES PERSON. Order the results by job
 -- (alphabetically) and name (alphabetically).
 
-SELECT ename,
+SELECT ename AS "Name",
        CASE WHEN LOWER(job) = 'salesman'
                  THEN 'SALES PERSON'
             ELSE job
-       END AS "job"
+       END AS "New Job Name"
 FROM emp
 ORDER BY job ASC,
          ename ASC;

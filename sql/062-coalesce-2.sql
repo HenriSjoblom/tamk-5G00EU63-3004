@@ -9,9 +9,9 @@
 -- Sort the results by the net income (lowest first).
 
 SELECT ename AS "Name",
-       sal + COALESCE(comm, 0) AS "Net Income",
+       sal * 0.69 + COALESCE(comm, 0) * 0.8  AS "Net Income",
        sal * 0.31 + COALESCE(comm, 0) * 0.2 AS "Tax"
 FROM emp
-ORDER BY sal + COALESCE(comm, 0) ASC;
+ORDER BY sal * 0.69 + comm * 0.8 ASC;
 
 -- End of file

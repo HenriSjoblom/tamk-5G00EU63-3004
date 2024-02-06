@@ -8,14 +8,14 @@
 -- salary" (lowest first) and employee name
 -- (alphabetically).
 
-SELECT ename,
-       sal,
-       sal * 1.15 AS "new salary"
-FROM emp
-WHERE mgr = (SELECT empno
-             FROM emp
-             WHERE LOWER(ename) = 'blake')
-ORDER BY sal * 1.15 ASC,
-         ename ASC;
+SELECT A.ename,
+       A.sal,
+       A.sal * 1.15 AS "new salary"
+FROM emp AS A
+INNER JOIN emp AS B
+        ON A.mgr = B.empno
+WHERE LOWER(B.ename) = 'blake'
+ORDER BY A.sal * 1.15 ASC,
+         A.ename ASC;
 
 -- End of file
