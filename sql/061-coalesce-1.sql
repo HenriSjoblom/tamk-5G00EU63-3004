@@ -10,6 +10,7 @@ SELECT deptno,
        ename,
        COALESCE(comm, 0) AS "comm"
 FROM emp
-ORDER BY ename ASC, COALESCE(comm, 0) ASC;
+ORDER BY ename ASC,
+         COALESCE(comm, 0) ASC;
 
 -- End of file

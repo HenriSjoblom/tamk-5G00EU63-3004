@@ -9,7 +9,7 @@
 -- (lowest first) and commission (lowest first).
 
 SELECT ename AS "Employee",
-       sal AS "Montly Salary",
+       sal AS "Monthly Salary",
        sal * 1.1 AS "Sal 10%",
        comm AS "Comm"
 FROM emp

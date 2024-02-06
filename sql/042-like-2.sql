@@ -8,8 +8,8 @@
 -- analysis. Sort the results by the department number
 -- (lowest first) and person name (alphabetically).
 
-SELECT ename,
-       deptno
+SELECT ename AS "Name",
+       deptno AS "Department"
 FROM emp
 WHERE (
         LOWER(ename) LIKE '_a%'
@@ -28,7 +28,7 @@ WHERE (
       (
         LOWER(job) LIKE '%sales%'
         OR
-        LOWER(job) LIKE '%analysis%'
+        LOWER(job) LIKE '%analyst%'
       )
 ORDER BY deptno ASC,
          ename ASC;

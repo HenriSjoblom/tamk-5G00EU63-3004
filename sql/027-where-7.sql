@@ -10,9 +10,9 @@ SELECT ename,
        job,
        sal
 FROM emp
-WHERE ( job = 'CLERK'
+WHERE ( LOWER(job) = 'clerk'
         OR
-        job = 'ANALYST'
+        LOWER(job) = 'analyst'
       )
       AND
       ( sal <> 1000

@@ -7,7 +7,7 @@
 -- (alphabetically) and name (alphabetically).
 
 SELECT ename,
-       CASE WHEN job = 'SALESMAN'
+       CASE WHEN LOWER(job) = 'salesman'
                  THEN 'SALES PERSON'
             ELSE job
        END AS "job"

@@ -11,7 +11,6 @@
 -- (alphabetically).
 
 SELECT ename,
-       deptno,
        CASE WHEN ( deptno = 30
                  AND
                    ( comm <= 0

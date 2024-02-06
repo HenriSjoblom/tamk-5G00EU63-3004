@@ -8,6 +8,6 @@
 
 SELECT ename
 FROM emp
-WHERE ename LIKE '__a%';
+WHERE LoWER(ename) LIKE '__a%';
 
 -- End of file
