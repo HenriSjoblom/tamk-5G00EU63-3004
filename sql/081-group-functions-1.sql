@@ -6,7 +6,7 @@
 -- president, in the whole company. Label the column
 -- "count of mangers".
 
-SELECT job, COUNT(mgr) AS "count of managers"
+SELECT COUNT(mgr) AS "count of managers"
 FROM emp
 GROUP BY job;
 

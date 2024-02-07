@@ -6,13 +6,9 @@
 -- including departments 10 and 30. Label the columns
 -- "high" and "low"
 
-SELECT deptno,
-       MAX(sal) AS "high",
+SELECT MAX(sal) AS "high",
        MIN(sal) AS "low"
 FROM emp
-GROUP BY deptno
-HAVING deptno = 30
-       OR
-       deptno = 10;
+WHERE deptno = 30 OR deptno = 10;
 
 -- End of file
