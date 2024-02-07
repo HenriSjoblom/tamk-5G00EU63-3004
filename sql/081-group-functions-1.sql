@@ -8,7 +8,6 @@
 
 SELECT COUNT(*) AS "count of managers"
 FROM emp
-WHERE job IN ('MANAGER', 'PRESIDENT');
-
+WHERE LOWER(job) IN ('manager', 'president');
 
 -- End of file
