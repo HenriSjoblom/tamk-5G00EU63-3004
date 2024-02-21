@@ -1,2 +1,4 @@
-/lecture/
-project/
+/lectures/
+temp/
+node_modules
+package-lock.json
