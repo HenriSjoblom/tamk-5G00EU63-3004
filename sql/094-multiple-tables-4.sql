@@ -13,7 +13,7 @@ FROM emp AS e
 JOIN dept AS d
   ON e.deptno = d.deptno
 WHERE LOWER(e.ename) LIKE '%a%'
-      OR
+      AND
       (
       e.sal > 1100
       AND

@@ -13,9 +13,9 @@ SELECT e1.deptno AS "Dept",
        e1.ename AS "Employee",
        e2.ename AS "Colleague"
 FROM emp AS e1
-INNER JOIN emp AS e2
-ON e1.deptno = e2.deptno
-WHERE LOWER(e2.ename) IN ('blake', 'ford', 'scott')
+JOIN emp AS e2
+USING (deptno)
+WHERE e1.ename <> e2.ename
 ORDER BY "Dept" ASC,
          "Employee" ASC,
          "Colleague" ASC;

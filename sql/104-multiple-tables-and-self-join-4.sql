@@ -14,9 +14,9 @@ SELECT d.loc AS "Location",
        e2.ename AS "Manager"
 FROM emp AS e1
 INNER JOIN emp AS e2
-ON e1.mgr = e2.empno
+        ON e1.mgr = e2.empno
 INNER JOIN dept AS d
-ON e1.deptno = d.deptno
+        ON e1.deptno = d.deptno
 WHERE LOWER(e2.ename) IN ('blake', 'ford', 'jones')
       AND
       e2.sal > 2000
