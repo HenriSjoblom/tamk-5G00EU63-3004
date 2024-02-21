@@ -8,7 +8,7 @@
 
 SELECT DISTINCT(e.job)
 FROM emp AS "e"
-JOIN dept AS "d"
+INNER JOIN dept AS "d"
 USING (deptno)
 WHERE LOWER(d.loc) = 'boston'
       OR

@@ -11,7 +11,7 @@ SELECT e.ename,
        d.dname,
        d.loc
 FROM emp AS "e"
-JOIN dept AS "d"
+INNER JOIN dept AS "d"
 USING (deptno)
 WHERE e.comm > 0
 ORDER BY e.ename ASC;

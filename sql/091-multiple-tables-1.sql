@@ -11,7 +11,7 @@ SELECT e.ename,
        e.deptno,
        d.dname
 FROM emp AS "e"
-JOIN dept AS "d"
+INNER JOIN dept AS "d"
 USING (deptno)
 WHERE LOWER(d.loc) == 'dallas'
       OR
