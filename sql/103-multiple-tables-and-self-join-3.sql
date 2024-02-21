@@ -7,8 +7,8 @@
 -- alphabetically by employee name.
 
 SELECT e1.ename
-FROM emp AS "e1"
-INNER JOIN emp AS "e2"
+FROM emp AS e1
+INNER JOIN emp AS e2
 ON e1.mgr = e2.empno
 WHERE e1.sal > e2.sal
 ORDER BY e1.ename ASC;

@@ -7,9 +7,9 @@
 -- alphabetically by job names.
 
 SELECT DISTINCT(e.job)
-FROM emp AS "e"
-INNER JOIN dept AS "d"
-USING (deptno)
+FROM emp AS e
+INNER JOIN dept AS d
+      ON e.deptno = d.deptno
 WHERE LOWER(d.loc) = 'boston'
       OR
       LOWER(d.loc) = 'new york'

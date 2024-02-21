@@ -12,10 +12,10 @@ SELECT d.loc AS "Location",
        d.dname AS "Department",
        e1.ename AS "Employee",
        e2.ename AS "Manager"
-FROM emp AS "e1"
-INNER JOIN emp AS "e2"
+FROM emp AS e1
+INNER JOIN emp AS e2
 ON e1.mgr = e2.empno
-INNER JOIN dept AS "d"
+INNER JOIN dept AS d
 ON e1.deptno = d.deptno
 WHERE LOWER(e2.ename) IN ('blake', 'ford', 'jones')
       AND

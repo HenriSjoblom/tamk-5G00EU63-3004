@@ -10,9 +10,9 @@
 SELECT e.ename,
        e.deptno,
        d.dname
-FROM emp AS "e"
-INNER JOIN dept AS "d"
-USING (deptno)
+FROM emp AS e
+INNER JOIN dept AS d
+      ON e.deptno = d.deptno
 WHERE LOWER(d.loc) == 'dallas'
       OR
       LOWER(job) = 'salesman'

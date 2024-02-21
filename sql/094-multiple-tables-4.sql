@@ -9,9 +9,9 @@
 
 SELECT e.ename,
        d.dname
-FROM emp AS "e"
-INNER JOIN dept AS "d"
-USING (deptno)
+FROM emp AS e
+JOIN dept AS d
+  ON e.deptno = d.deptno
 WHERE LOWER(e.ename) LIKE '%a%'
       OR
       (

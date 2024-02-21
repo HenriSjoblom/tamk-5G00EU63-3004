@@ -8,11 +8,11 @@
 -- employee name.
 
 SELECT e.ename,
-       d.dname,
-       d.loc
-FROM emp AS "e"
-INNER JOIN dept AS "d"
-USING (deptno)
+    d.dname,
+    d.loc
+FROM emp AS e
+INNER JOIN dept AS d
+      ON e.deptno = d.deptno
 WHERE e.comm > 0
 ORDER BY e.ename ASC;
 
