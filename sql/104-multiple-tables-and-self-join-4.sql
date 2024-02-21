@@ -17,9 +17,11 @@ INNER JOIN emp AS e2
         ON e1.mgr = e2.empno
 INNER JOIN dept AS d
         ON e1.deptno = d.deptno
+INNER JOIN salgrade AS s
+        ON e2.sal BETWEEN s.losal AND s.hisal
 WHERE LOWER(e2.ename) IN ('blake', 'ford', 'jones')
       AND
-      e2.sal > 2000
+      s.grade > 3
 ORDER BY "Location" ASC,
          "Manager" ASC,
          "Employee" ASC;
