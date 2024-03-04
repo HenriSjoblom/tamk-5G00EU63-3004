@@ -10,7 +10,8 @@ CREATE TABLE football
     id          INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , first     VARCHAR(200)
     , last      VARCHAR(200)
-    , comment   VARCHAR(200)
+    , team      VARCHAR(200)
+    , comment   VARCHAR(500)
 );
 
 -- End of file

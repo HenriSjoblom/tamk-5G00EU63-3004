@@ -14,6 +14,7 @@ INSERT INTO person
 (
     id,
     last,
+    first,
     phone,
     zip,
     city,
@@ -34,6 +35,7 @@ INSERT INTO person
 (
     id,
     last,
+    first,
     phone,
     zip,
     city,
@@ -54,6 +56,7 @@ INSERT INTO person
 (
     id,
     last,
+    first,
     phone,
     zip,
     city,

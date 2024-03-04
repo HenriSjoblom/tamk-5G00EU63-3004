@@ -15,7 +15,7 @@ CREATE TABLE person
     , first     VARCHAR(200)
     , last      VARCHAR(200)
     , phone     VARCHAR(80)
-    , zip       INTEGER
+    , zip       VARCHAR(80)
     , city      VARCHAR(200)
     , address   VARCHAR(200)
 

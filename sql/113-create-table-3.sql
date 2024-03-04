@@ -12,20 +12,15 @@
 CREATE TABLE weather
 (
     id                  INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
-    , time_of_reading   VARCHAR(200)
-    , high              VARCHAR(200)
-    , low               VARCHAR(80)
-    , sig               VARCHAR(2)
+    , time_of_reading   TIMESTAMP
+    , high              DECIMAL(3, 1)
+    , low               DECIMAL(3, 1)
+    , sig               VARCHAR(200)
     , comment           VARCHAR(200)
 
 
     , CONSTRAINT person__sig_ck
            CHECK (LENGTH(sig) = 2)
-
-    , CONSTRAINT weather__temperature_ck
-           CHECK (high LIKE '-[0-9]+.[0-9]' OR high LIKE '[0-9]+.[0-9]')
-                 AND
-                 (low LIKE '-[0-9]+.[0-9]' OR low LIKE '[0-9]+.[0-9]')
 );
 
 -- End of file
