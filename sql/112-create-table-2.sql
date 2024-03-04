@@ -11,7 +11,7 @@ CREATE TABLE football
     , first     VARCHAR(200)
     , last      VARCHAR(200)
     , team      VARCHAR(200)
-    , comment   VARCHAR(500)
+    , comment   VARCHAR(2000)
 );
 
 -- End of file

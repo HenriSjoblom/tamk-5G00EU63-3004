@@ -13,11 +13,10 @@ CREATE TABLE weather
 (
     id                  INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , time_of_reading   TIMESTAMP
-    , high              DECIMAL(3, 1)
-    , low               DECIMAL(3, 1)
+    , high              DECIMAL
+    , low               DECIMAL
     , sig               VARCHAR(200)
     , comment           VARCHAR(200)
-
 
     , CONSTRAINT person__sig_ck
            CHECK (LENGTH(sig) = 2)
