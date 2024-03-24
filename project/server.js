@@ -2,7 +2,8 @@ let express = require('express');
 require('dotenv').config();
 
 const {
-  findTeams,
+  findTeam,
+  findChampion
 } = require('./models');
 
 let app = express();
@@ -17,9 +18,9 @@ app.get('/health', (req, res) => {
     res.status(200).send('OK');
 })
 
-app.get('/api/v1/teams', async(req, res) => {
+app.get('/api/v1/team', async(req, res) => {
   try {
-    const response = await findTeams();
+    const response = await findTeam();
     if (response) {
         res.json(response);
     }
@@ -28,6 +29,18 @@ app.get('/api/v1/teams', async(req, res) => {
     res.status(500).json({message: "Something went wrong"});
   }
 })
+
+app.get('/api/v1/champion', async(req, res) => {
+    try {
+      const response = await findChampion();
+      if (response) {
+          res.json(response);
+      }
+    } catch (error) {
+      console.log(error)
+      res.status(500).json({message: "Something went wrong"});
+    }
+  })
 
     /*
     // https://expressjs.com/en/guide/routing.html#route-parameters
@@ -45,12 +58,12 @@ app.get('/api/v1/teams', async(req, res) => {
     })
     */
 
-    app.use((req, res) => {	// Default: any other request
-        res.setHeader('Content-Type', 'application/json');
-        res.status(404).json({});
-    });
+app.use((req, res) => {	// Default: any other request
+    res.setHeader('Content-Type', 'application/json');
+    res.status(404).json({});
+});
 
 
-    app.listen(port, () => {
-        console.log(`App listening on port ${port}`)
-    })
+app.listen(port, () => {
+    console.log(`App listening on port ${port}`)
+})

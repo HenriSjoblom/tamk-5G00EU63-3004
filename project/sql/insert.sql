@@ -1,8 +1,8 @@
--- Teams
+-- team table
 -- anaheim_ducks
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -18,8 +18,8 @@ VALUES
 );
 
 -- arizona_coyotes
-INSERT INTO teams (
-    team_id,
+INSERT INTO team (
+    id,
     team_name,
     location,
     division,
@@ -33,8 +33,8 @@ INSERT INTO teams (
 );
 
 -- boston_bruins
-INSERT INTO teams (
-    team_id,
+INSERT INTO team (
+    id,
     team_name,
     location,
     division,
@@ -48,8 +48,8 @@ INSERT INTO teams (
 );
 
 -- buffalo_sabres
-INSERT INTO teams (
-    team_id,
+INSERT INTO team (
+    id,
     team_name,
     location,
     division,
@@ -63,9 +63,9 @@ INSERT INTO teams (
 );
 
 -- calgary_flames
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -81,9 +81,9 @@ VALUES
 );
 
 -- carolina hurricanes
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -99,9 +99,9 @@ VALUES
 );
 
 -- chicago blackhawks
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -117,9 +117,9 @@ VALUES
 );
 
 -- Inserts details of Colorado Avalanche
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -135,9 +135,9 @@ VALUES
 );
 
 -- columbus_blue_jackets
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -153,9 +153,9 @@ VALUES
 );
 
 -- dallas_stars
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -171,9 +171,9 @@ VALUES
 );
 
 -- detroit_red_wings
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -189,9 +189,9 @@ VALUES
 );
 
 -- edmonton_oilers
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -207,9 +207,9 @@ VALUES
 );
 
 -- florida_panthers
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -225,9 +225,9 @@ VALUES
 );
 
 -- los_angeles_kings
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -243,9 +243,9 @@ VALUES
 );
 
 -- minnesota_wild
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -261,9 +261,9 @@ VALUES
 );
 
 -- montreal_canadiens
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -279,9 +279,9 @@ VALUES
 );
 
 -- nashville_predators
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -297,9 +297,9 @@ VALUES
 );
 
 -- new_jersey_devils
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -316,9 +316,9 @@ VALUES
 
 
 -- new_york_islanders
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -334,9 +334,9 @@ VALUES
 );
 
 -- new_york_rangers
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -352,9 +352,9 @@ VALUES
 );
 
 -- ottawa_senators
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -370,9 +370,9 @@ VALUES
 );
 
 -- philadelphia_flyers
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -388,9 +388,9 @@ VALUES
 );
 
 -- pittsburgh_penguins
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -406,9 +406,9 @@ VALUES
 );
 
 -- san_jose_sharks
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -424,9 +424,9 @@ VALUES
 );
 
 -- seattle_kraken
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -442,9 +442,9 @@ VALUES
 );
 
 -- st_louis_blues
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -460,9 +460,9 @@ VALUES
 );
 
 -- tampa_bay_lightning
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -479,9 +479,9 @@ VALUES
 
 
 -- toronto_maple_leafs
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -498,9 +498,9 @@ VALUES
 
 
 -- vancouver_canucks
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -516,9 +516,9 @@ VALUES
 );
 
 -- vegas_golden_knights
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -534,9 +534,9 @@ VALUES
 );
 
 -- washington_capitals
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -552,9 +552,9 @@ VALUES
 );
 
 -- winnipeg_jets
-INSERT INTO teams
+INSERT INTO team
 (
-    team_id,
+    id,
     team_name,
     location,
     division,
@@ -569,12 +569,11 @@ VALUES
     'Western'
 );
 
---
---Champions
+-- champion table
 -- Colorado Avalanche (2001)
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -586,9 +585,9 @@ VALUES
 );
 
 -- Detroit Red Wings (2002)
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -600,9 +599,9 @@ VALUES
 );
 
 -- New Jersey Devils (2003)
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -615,9 +614,9 @@ VALUES
 
 
 -- 2004
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -629,9 +628,9 @@ VALUES
 );
 
 -- 2006
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -643,9 +642,9 @@ VALUES
 );
 
 -- 2007
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -657,9 +656,9 @@ VALUES
 );
 
 -- 2008
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -671,9 +670,9 @@ VALUES
 );
 
 -- 2009
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -685,9 +684,9 @@ VALUES
 );
 
 -- 2010
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -699,9 +698,9 @@ VALUES
 );
 
 -- 2011
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -713,9 +712,9 @@ VALUES
 );
 
 -- 2012
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -727,9 +726,9 @@ VALUES
 );
 
 -- 2013
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -741,9 +740,9 @@ VALUES
 );
 
 -- 2014
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -755,9 +754,9 @@ VALUES
 );
 
 -- 2015
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -769,9 +768,9 @@ VALUES
 );
 
 -- 2016
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -783,9 +782,9 @@ VALUES
 );
 
 -- 2017
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -797,9 +796,9 @@ VALUES
 );
 
 -- 2018
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -811,9 +810,9 @@ VALUES
 );
 
 -- 2019
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -825,9 +824,9 @@ VALUES
 );
 
 -- 2020
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -839,9 +838,9 @@ VALUES
 );
 
 -- 2021
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -853,9 +852,9 @@ VALUES
 );
 
 -- 2022
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
@@ -867,9 +866,9 @@ VALUES
 );
 
 -- 2023
-INSERT INTO champions
+INSERT INTO champion
 (
-    champion_id,
+    id,
     season,
     team_id
 )
