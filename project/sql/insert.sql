@@ -1,3 +1,4 @@
+-- Teams
 -- anaheim_ducks
 INSERT INTO teams
 (
@@ -61,7 +62,7 @@ INSERT INTO teams (
     'Eastern'
 );
 
--- Inserts details of Calgary Flames
+-- calgary_flames
 INSERT INTO teams
 (
     team_id,
@@ -79,7 +80,7 @@ VALUES
     'Western'
 );
 
--- Inserts details of Carolina Hurricanes
+-- carolina hurricanes
 INSERT INTO teams
 (
     team_id,
@@ -97,7 +98,7 @@ VALUES
     'Eastern'
 );
 
--- Inserts details of Chicago Blackhawks
+-- chicago blackhawks
 INSERT INTO teams
 (
     team_id,
@@ -567,3 +568,315 @@ VALUES
     'Central',
     'Western'
 );
+
+--
+--Champions
+-- Colorado Avalanche (2001)
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2001,
+    '2001',
+    8
+);
+
+-- Detroit Red Wings (2002)
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2002,
+    '2002',
+    11
+);
+
+-- New Jersey Devils (2003)
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2003,
+    '2003',
+    18
+);
+
+
+-- 2004
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2004,
+    '2004',
+    27
+);
+
+-- 2006
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2006,
+    '2006',
+    6
+);
+
+-- 2007
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    6,
+    '2007',
+    1
+);
+
+-- 2008
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2008,
+    '2008',
+    11
+);
+
+-- 2009
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2009,
+    '2009',
+    23
+);
+
+-- 2010
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2010,
+    '2010',
+    7
+);
+
+-- 2011
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2011,
+    '2011',
+    3
+);
+
+-- 2012
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2012,
+    '2012',
+    14
+);
+
+-- 2013
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2013,
+    '2013',
+    7
+);
+
+-- 2014
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2014,
+    '2014',
+    14
+);
+
+-- 2015
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2015,
+    '2015',
+    7
+);
+
+-- 2016
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2016,
+    '2016',
+    23
+);
+
+-- 2017
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2017,
+    '2017',
+    23
+);
+
+-- 2018
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2018,
+    '2018',
+    31
+);
+
+-- 2019
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2019,
+    '2019',
+    26
+);
+
+-- 2020
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2020,
+    '2020',
+    27
+);
+
+-- 2021
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2021,
+    '2021',
+    27
+);
+
+-- 2022
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2022,
+    '2022',
+    8
+);
+
+-- 2023
+INSERT INTO champions
+(
+    champion_id,
+    season,
+    team_id
+)
+VALUES
+(
+    2023,
+    '2023',
+    30
+);
+
