@@ -879,3 +879,427 @@ VALUES
     30
 );
 
+--arena table
+-- Anaheim Ducks
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    1,
+    1
+);
+
+-- Arizona Coyotes
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    2,
+    2
+);
+
+-- Boston Bruins
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    3,
+    3
+);
+
+-- Buffalo Sabres
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    4,
+    4
+);
+
+-- Calgary Flames
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    5,
+    5
+);
+
+-- Carolina Hurricanes
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    6,
+    'PNC Arena',
+    6
+);
+
+-- Chicago Blackhawks
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    7,
+    'United Center',
+    7
+);
+
+-- Colorado Avalanche
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    8,
+    8
+);
+
+-- Columbus Blue Jackets
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    9,
+    'Nationwide Arena',
+    9
+);
+
+-- Dallas Stars
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    10,
+    'American Airlines Center',
+    10
+);
+
+-- Detroit Red Wings
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    11,
+    'Little Caesars Arena',
+    11
+);
+
+-- Edmonton Oilers
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    12,
+    'Rogers Place',
+    12
+);
+
+-- Florida Panthers
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    13,
+    'BB&T Center',
+    13
+);
+
+-- Los Angeles Kings
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    14,
+    14
+);
+
+-- Minnesota Wild
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    15,
+    'Xcel Energy Center',
+    15
+);
+
+-- Montreal Canadiens
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    16,
+    'Bell Centre',
+    16
+);
+
+-- Nashville Predators
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    17,
+    'Bridgestone Arena',
+    17
+);
+
+-- New Jersey Devils
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    18,
+    18
+);
+
+-- New York Islanders
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    19,
+    19
+);
+
+-- New York Rangers
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    20,
+    'Madison Square Garden',
+    20
+);
+
+-- Ottawa Senators
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    21,
+    21
+);
+
+-- Philadelphia Flyers
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    22,
+    'Wells Fargo Center',
+    22
+);
+
+-- Pittsburgh Penguins
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    23,
+    'PPG Paints Arena',
+    23
+);
+
+-- San Jose Sharks
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    24,
+    'SAP Center',
+    24
+);
+
+-- Seattle Kraken
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    25,
+    25
+);
+
+-- St. Louis Blues
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    26,
+    'Enterprise Center',
+    26
+);
+
+-- Tampa Bay Lightning
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    27,
+    'Amalie Arena',
+    27
+);
+
+-- Toronto Maple Leafs
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    28,
+    'Scotiabank Arena',
+    28
+);
+
+-- Vancouver Canucks
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    29,
+    'Rogers Arena',
+    29
+);
+
+-- Vegas Golden Knights
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    30,
+    'T-Mobile Arena',
+    30
+);
+
+-- Washington Capitals
+INSERT INTO arena
+(
+    id,
+    name,
+    team_id
+)
+VALUES
+(
+    31,
+    'Capital One Arena',
+    31
+);
+
+-- Winnipeg Jets
+INSERT INTO arena
+(
+    id,
+    team_id
+)
+VALUES
+(
+    32,
+    32
+);

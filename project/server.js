@@ -1,12 +1,14 @@
-let express = require('express');
+const express = require('express');
 require('dotenv').config();
 
 const {
   findTeam,
   findChampion
-} = require('./models');
+} = require('./model');
 
-let app = express();
+const app = express();
+app.use(express.json());
+
 const port = process.env.PORT || 8080;
 
 app.get('/', (req, res) => {
@@ -41,6 +43,8 @@ app.get('/api/v1/champion', async(req, res) => {
       res.status(500).json({message: "Something went wrong"});
     }
   })
+
+
 
     /*
     // https://expressjs.com/en/guide/routing.html#route-parameters
