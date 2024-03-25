@@ -4,7 +4,8 @@ require('dotenv').config();
 const {
   findTeam,
   findChampion,
-  findArena
+  findArena,
+  findFranchise,
 } = require('./model');
 
 const app = express();
@@ -12,48 +13,83 @@ app.use(express.json());
 
 const port = process.env.PORT || 8080;
 
+const HTTP_STATUS_OK = 200
+const HTTP_STATUS_404 = 404
+const HTTP_STATUS_INTERNAL_ERROR = 500
+
+
 app.get('/', (req, res) => {
-  res.setHeader('Content-Type', 'text/plain');
-  res.status(302).send('Hello World!\n');
+  res.setHeader('Content-Type', 'text/plain')
+  res.status(302).send('Hello World!\n')
 })
 
 app.get('/health', (req, res) => {
-    res.status(200).send('OK');
+  res.setHeader('Content-Type', 'application/json')
+  res.status(HTTP_STATUS_OK).send('OK')
 })
 
 app.get('/api/v1/team', async(req, res) => {
+  const location = req.query.location
+  const division = req.query.division
+  const conference = req.query.conference
+
   try {
-    const response = await findTeam();
+    const response = await findTeam(location, division, conference)
+
     if (response) {
-        res.json(response);
+        res.json(response)
     }
   } catch (error) {
     console.log(error)
-    res.status(500).json({message: "Something went wrong"});
+    res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
   }
 })
 
 app.get('/api/v1/champion', async(req, res) => {
+    const season = req.query.season
+    const team_id = req.query.team_id
     try {
-      const response = await findChampion();
+      const response = await findChampion(season, team_id)
       if (response) {
-          res.json(response);
+          res.json(response)
       }
     } catch (error) {
       console.log(error)
-      res.status(500).json({message: "Something went wrong"});
+      res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
     }
   })
 
 app.get('/api/v1/arena', async(req, res) => {
+  const team_id = req.query.team_id
   try {
-    const response = await findArena();
+    const response = await findArena(team_id)
     if (response) {
         res.json(response);
     }
   } catch (error) {
     console.log(error)
-    res.status(500).json({message: "Something went wrong"});
+    res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
+  }
+})
+
+app.get('/api/v1/franchise', async(req, res) => {
+  const location = req.query.location
+  const division = req.query.division
+  const conference = req.query.conference
+  const stanleyCup = req.query.stanleyCup
+  console.log("stanley " + stanleyCup)
+  console.log("location " + location)
+  console.log("division " + division)
+  console.log("con " + conference)
+
+  try {
+    const response = await findFranchise(location, division, conference, stanleyCup)
+    if (response) {
+        res.json(response)
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
   }
 })
 
@@ -76,7 +112,7 @@ app.get('/api/v1/arena', async(req, res) => {
 
 app.use((req, res) => {	// Default: any other request
     res.setHeader('Content-Type', 'application/json');
-    res.status(404).json({});
+    res.status(HTTP_STATUS_404).json({});
 });
 
 

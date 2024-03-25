@@ -3,7 +3,7 @@
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -20,7 +20,7 @@ VALUES
 -- arizona_coyotes
 INSERT INTO team (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -35,7 +35,7 @@ INSERT INTO team (
 -- boston_bruins
 INSERT INTO team (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -50,7 +50,7 @@ INSERT INTO team (
 -- buffalo_sabres
 INSERT INTO team (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -66,7 +66,7 @@ INSERT INTO team (
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -84,7 +84,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -102,7 +102,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -120,7 +120,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -138,7 +138,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -156,7 +156,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -174,7 +174,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -192,7 +192,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -210,7 +210,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -228,7 +228,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -246,7 +246,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -264,7 +264,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -282,7 +282,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -300,7 +300,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -319,7 +319,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -337,7 +337,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -355,7 +355,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -373,7 +373,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -391,7 +391,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -409,7 +409,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -427,7 +427,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -445,7 +445,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -463,7 +463,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -482,7 +482,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -501,7 +501,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -519,7 +519,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -537,7 +537,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -555,7 +555,7 @@ VALUES
 INSERT INTO team
 (
     id,
-    team_name,
+    name,
     location,
     division,
     conference
@@ -650,7 +650,7 @@ INSERT INTO champion
 )
 VALUES
 (
-    6,
+    2007,
     '2007',
     1
 );

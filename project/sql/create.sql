@@ -5,7 +5,7 @@ DROP TABLE IF EXISTS arena;
 --Creates nhl teams table
 CREATE TABLE IF NOT EXISTS team (
     id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
-    , team_name VARCHAR(200) NOT NULL
+    , name VARCHAR(200) NOT NULL
     , location VARCHAR(200)
     , division VARCHAR(200)
     , conference VARCHAR(200)
