@@ -3,7 +3,8 @@ require('dotenv').config();
 
 const {
   findTeam,
-  findChampion
+  findChampion,
+  findArena
 } = require('./model');
 
 const app = express();
@@ -44,6 +45,17 @@ app.get('/api/v1/champion', async(req, res) => {
     }
   })
 
+app.get('/api/v1/arena', async(req, res) => {
+  try {
+    const response = await findArena();
+    if (response) {
+        res.json(response);
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(500).json({message: "Something went wrong"});
+  }
+})
 
 
     /*
