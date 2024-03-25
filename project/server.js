@@ -4,6 +4,7 @@ require('dotenv').config();
 const {
   findTeam,
   findChampion,
+  createChampion,
   findArena,
   findFranchise,
 } = require('./model');
@@ -58,6 +59,21 @@ app.get('/api/v1/champion', async(req, res) => {
       res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
     }
   })
+
+app.post('/api/v1/champion', async(req, res) => {
+  const id = req.body.id
+  const season = req.body.season
+  const team_id = req.body.team_id
+  try {
+    const response = await createChampion(id, season, team_id)
+    if (response) {
+        res.json(response)
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
+  }
+})
 
 app.get('/api/v1/arena', async(req, res) => {
   const team_id = req.query.team_id

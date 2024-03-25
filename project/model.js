@@ -52,6 +52,7 @@ const findTeam = (location, division, conference) => {
 const findChampion = (season, team_id) => {
   return new Promise((resolve, reject) => {
 
+    const db = new sqlite3.Database("database.db")
     // Initialize an array to store the WHERE conditions
     const whereConditions = [];
     const queryParams = [];
@@ -73,7 +74,6 @@ const findChampion = (season, team_id) => {
     // Construct the complete WHERE clause
     const whereClause = whereConditions.join(" AND ")
 
-    const db = new sqlite3.Database("database.db")
     const query = `SELECT c.id,
                           c.season,
                           c.team_id,
@@ -84,6 +84,39 @@ const findChampion = (season, team_id) => {
                    ${whereStart} ${whereClause}
                    ORDER BY c.id ASC;
                    `;
+
+    db.all(query, queryParams, (err, rows) => {
+      db.close()
+      if (err) {
+          reject(err)
+      } else {
+          resolve(rows)
+      }
+    })
+  })
+}
+
+const createChampion = (id, season, team_id) => {
+  return new Promise((resolve, reject) => {
+
+    const db = new sqlite3.Database("database.db")
+    let queryParams = [id, season, team_id]
+    const query = `INSERT INTO champion
+                   (
+                    id,
+                    season,
+                    team_id
+                   )
+                   VALUES
+                   (
+                   ?,
+                   ?,
+                   ?
+                   );
+                   `;
+
+    console.log("QUERY PARAMS " + queryParams)
+    console.log("QUERY: " + query)
 
     db.all(query, queryParams, (err, rows) => {
       db.close()
@@ -196,6 +229,7 @@ const findFranchise = (location, division, conference, stanley_cups) => {
 module.exports = {
   findTeam,
   findChampion,
+  createChampion,
   findArena,
   findFranchise
 }
