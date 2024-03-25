@@ -5,6 +5,7 @@ const {
   findTeam,
   findChampion,
   createChampion,
+  deleteChampion,
   findArena,
   findFranchise,
 } = require('./model');
@@ -66,6 +67,25 @@ app.post('/api/v1/champion', async(req, res) => {
   const team_id = req.body.team_id
   try {
     const response = await createChampion(id, season, team_id)
+    if (response) {
+        res.json(response)
+    }
+  } catch (error) {
+    console.log(error)
+    res.status(HTTP_STATUS_INTERNAL_ERROR).json({message: "Something went wrong"})
+  }
+})
+
+app.delete('/api/v1/champion/:id', async(req, res) => {
+
+  try {
+    const id = parseInt(req.params.id, 10);
+    const check = await findChampion(id);
+    if (check.length === 0) {
+      res.status(404).json({ message: "Id not found" });
+      return;
+    }
+    const response = await deleteChampion(id)
     if (response) {
         res.json(response)
     }

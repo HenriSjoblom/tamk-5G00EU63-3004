@@ -102,18 +102,42 @@ const createChampion = (id, season, team_id) => {
     const db = new sqlite3.Database("database.db")
     let queryParams = [id, season, team_id]
     const query = `INSERT INTO champion
-                   (
+                    (
                     id,
                     season,
                     team_id
-                   )
-                   VALUES
-                   (
-                   ?,
-                   ?,
-                   ?
-                   );
-                   `;
+                    )
+                    VALUES
+                    (
+                    ?,
+                    ?,
+                    ?
+                    );
+                    `;
+
+    console.log("QUERY PARAMS " + queryParams)
+    console.log("QUERY: " + query)
+
+    db.all(query, queryParams, (err, rows) => {
+      db.close()
+      if (err) {
+          reject(err)
+      } else {
+          resolve(rows)
+      }
+    })
+  })
+}
+
+const deleteChampion = (id) => {
+  return new Promise((resolve, reject) => {
+
+    const db = new sqlite3.Database("database.db")
+    let queryParams = [id]
+    const query = `DELETE
+                   FROM champion
+                   WHERE id = ?
+                    `;
 
     console.log("QUERY PARAMS " + queryParams)
     console.log("QUERY: " + query)
@@ -230,6 +254,7 @@ module.exports = {
   findTeam,
   findChampion,
   createChampion,
+  deleteChampion,
   findArena,
   findFranchise
 }
