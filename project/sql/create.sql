@@ -1,6 +1,6 @@
-DROP TABLE IF EXISTS team;
-DROP TABLE IF EXISTS champion;
-DROP TABLE IF EXISTS arena;
+--DROP TABLE IF EXISTS team;
+--DROP TABLE IF EXISTS champion;
+--DROP TABLE IF EXISTS arena;
 
 --Creates nhl teams table
 CREATE TABLE IF NOT EXISTS team (
