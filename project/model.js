@@ -36,8 +36,7 @@ const findTeam = (location, division, conference) => {
                    FROM team
                    ${whereStart} ${whereClause}
                    ORDER BY id ASC;`
-    console.log(query)
-    console.log(queryParams)
+
     db.all(query, queryParams, (err, rows) => {
       db.close()
       if (err) {
@@ -113,9 +112,6 @@ const createChampion = (id, season, teamId) => {
                     );
                     `
 
-    console.log('QUERY PARAMS ' + queryParams)
-    console.log('QUERY: ' + query)
-
     db.all(query, queryParams, (err, rows) => {
       db.close()
       if (err) {
@@ -135,9 +131,6 @@ const deleteChampion = (id) => {
                    FROM champion
                    WHERE id = ?
                     `
-
-    console.log('QUERY PARAMS ' + queryParams)
-    console.log('QUERY: ' + query)
 
     db.all(query, queryParams, (err, rows) => {
       db.close()
@@ -195,8 +188,6 @@ const findArenaById = (id) => {
                    WHERE id = ?
                    `
 
-    console.log('PARAMS ' + queryParams)
-    console.log('QUERY: ' + query)
     db.all(query, queryParams, (err, rows) => {
       db.close()
       if (err) {
@@ -279,8 +270,6 @@ const findFranchise = (location, division, conference, stanleyCup) => {
                   ${havingClause}
                   ORDER BY t.id ASC;`
 
-    console.log('WHERE CLAUSE ' + whereClause)
-    console.log('QUERY: ' + query)
     db.all(query, queryParams, (err, rows) => {
       db.close()
       if (err) {
