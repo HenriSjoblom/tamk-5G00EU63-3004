@@ -27,7 +27,7 @@ CREATE TABLE IF NOT EXISTS champion (
 
 -- Create arena table for nhl teams
 CREATE TABLE IF NOT EXISTS arena (
-    id INTEGER PRIMARY KEY
+    id INTEGER [NOT NULL] [UNIQUE] [PRIMARY KEY]
     , name VARCHAR(200)
     , team_id INTEGER NOT NULL
 
